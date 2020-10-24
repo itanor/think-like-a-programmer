@@ -11,12 +11,12 @@ int main(int argc, char* argv[]) {
   }
   int times = stoi(argv[1]);
 
-  int z = (times/2) + 1;
+  int pivot = (times/2) + 1;
   int diff = 2;
 
   for (int rows = 1; rows <= times; rows++) {
     int exp = rows;
-    if (rows > z) {
+    if (rows > pivot) {
       exp = rows - diff;
       diff += 2;
     }
